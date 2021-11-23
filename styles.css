@@ -1,0 +1,22 @@
+#content {
+	margin: 20px;
+	padding: 20px;
+}
+
+#content > div {
+	margin: 20px;
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#idInfo {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #a6a6a6e0;
+	font-weight: lighter;
+}

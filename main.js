@@ -36,9 +36,9 @@ async function getHNTopStoriesData() {
                 ${idData.title}
             </a>
             <div id="idInfo"> 
-            Score: ${idData.score}  | 
-            Comments: ${idData.descendants} | 
-            Author: ${idData.by}  
+            	<div> Score: ${idData.score}  | </div>
+        		<div> Comments: ${idData.descendants} | </div>
+				<div> Author: ${idData.by} </div>  
             </div>
 			<button id="displayCommentsBtn" type="button" class="btn btn-secondary">Display Comments</button>
         </div>`);

@@ -27,11 +27,12 @@ async function getHNTopStoriesData() {
 	console.log("start");
 
 	for (let i = 0; i < 100; i++) {
+		const dataItem = data[i];
 		const idURL = `${HNBaseUrl}/item/${data[i]}.json?print=pretty`;
 		const idData = await makeHttpRequest(idURL);
-		console.log(i);
+
 		const newDiv = $(`
-        <div id="${data[i]}" class="topStories">
+        <div id="${dataItem}" class="topStories">
             <a href="${idData.url}">
                 ${idData.title}
             </a>
@@ -45,13 +46,11 @@ async function getHNTopStoriesData() {
 
 		content.append(newDiv);
 	}
-
-	displayCommentsBtn.addEventListener("click", function () {
-		console.log("Working");
-		// alert("It works!");
-	});
-
 	console.log("finished");
 }
 
 getHNTopStoriesData();
+// displayCommentsBtn.addEventListener("click", function () {
+// 	console.log("Working");
+// 	// alert("It works!");
+// });

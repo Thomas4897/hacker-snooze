@@ -1,10 +1,12 @@
 body {
-	background: black;
+	background: #242424;
 }
 
 #header {
 	display: flex;
 	background: #fe6c0b;
+	box-shadow: 0px 0px 25px #fe6c0b;
+	color: #242424;
 	padding: 20px;
 	align-items: center;
 	justify-content: center;
@@ -35,7 +37,7 @@ body {
 #content > .topStories {
 	margin: 30px;
 	padding: 20px;
-	background: #ededed;
+	background: #e8e8e8;
 	box-shadow: 5px 5px 10px #fe6c0b;
 }
 
@@ -43,8 +45,8 @@ body {
 	margin: -21px;
 	margin-bottom: 40px;
 	padding: 10px;
-	background: black;
-	color: white;
+	background: #424242;
+	color: #e3e3e3;
 	box-shadow: 1px 1px 5px #fe6c0b;
 	display: flex;
 	align-items: center;
@@ -55,14 +57,14 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #242424;
 	font-weight: bold;
 }
 
 #idInfo {
 	margin-top: 10px;
 	margin-left: 10px;
-	color: #a6a6a6e0;
+	color: #88807c;
 	font-weight: lighter;
 	display: flex;
 }

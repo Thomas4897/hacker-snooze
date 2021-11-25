@@ -25,7 +25,7 @@ body {
 }
 
 #content {
-	margin: 20px;
+	margin: 50px;
 	padding: 20px;
 	border: 1px solid black;
 	background: #f2f2f2;
@@ -33,8 +33,9 @@ body {
 }
 
 #content > .topStories {
-	margin: 20px;
+	margin: 30px;
 	padding: 20px;
+	background: #ededed;
 	box-shadow: 5px 5px 10px #fe6c0b;
 }
 
@@ -74,24 +75,22 @@ a {
 	margin-top: 20px;
 }
 
-@media only screen and (max-width: 500px) {
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
+@media only screen and (max-width: 600px) {
 	#content {
-		width: 300px;
+		width: 500px;
 		display: flex;
 		flex-direction: column;
 	}
 
 	#header {
-		width: 500px;
+		width: 600px;
 	}
 
 	#idInfo {
 		flex-direction: column;
+	}
+
+	#idInfo > div {
+		margin-top: 5px;
 	}
 }
